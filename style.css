@@ -2,7 +2,8 @@
 
 /* Variables */
 :root {
-    --main-color: 123,43,151; 
+    --main-color: 123,143,51; 
+    --main-color-inverse: 123,143,51;
     --btn: 18,92,252;
     --br-radius: 8px;
     --innerPad: 8px;
@@ -55,6 +56,7 @@ body {
 }
 .newColorBtn:hover {
     background: rgba(var(--btn), 0.5);
+    color: white;
 }
 /*Reset styles in the box*/
 .details-holder {
@@ -151,7 +153,7 @@ p {
 .ex-interactions > div:hover {
     cursor: pointer;
     background: rgba(var(--main-color),0.5);
-    color: rgba(var(--main-color),1)
+    color: rgba(var(--main-color-inverse),1);
 }
 .ex-likes:first-child {
     font-weight: 400; 
@@ -181,6 +183,9 @@ input {
 input:focus-within {
     outline: none;
 }
+input::placeholder {
+    color: rgba(var(--main-color));
+}
 
 button {
     background: rgba(var(--main-color), 1);
@@ -192,7 +197,8 @@ button {
     width: fit-content;
 }
 button:hover {
-    background: rgba(var(--main-color), 0.5)
+    background: rgba(var(--main-color), 0.5);
+    color: rgba(var(--main-color-inverse),1);
 }
 
 
