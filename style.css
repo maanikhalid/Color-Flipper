@@ -2,8 +2,8 @@
 
 /* Variables */
 :root {
-    --main-color: 23,143,151; 
-    --main-color-inverse: 123,143,51;
+    --main-color: 23,143,51; 
+    --main-color-inverse: 23,143,51;
     --btn: 18,92,252;
     --br-radius: 8px;
     --innerPad: 8px;
