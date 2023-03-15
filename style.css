@@ -24,6 +24,15 @@ body {
     max-width: 500px;
     margin: 0 auto !important;
 }
+#rgbaValueEl { cursor: pointer;}
+#rgbaValueEl:hover {color: rgba(var(--main-color-inverse)); cursor: pointer;}
+#rgbaValueEl > span { font-size: 0.7em;}
+
+#hexValueEl { cursor: pointer;}
+#hexValueEl:hover {color: rgba(var(--main-color-inverse)); cursor: pointer;}
+#hexValueEl > span { font-size: 0.7em;}
+
+
 .generator {
     max-width: 250px;
     width: 100%;
