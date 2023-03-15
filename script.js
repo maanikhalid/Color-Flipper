@@ -12,10 +12,16 @@ console.log(hexValueEl)
 /* Lets & Consts*/
 let color = [
     mainColor = "12,12,12",
-    colorName = "Red",
-    rgbaValue = "12,12,12",
+    colorName = "Scarlet Red",
+    rgbaValue = "12,12,12,1",
     hexValue = "#ff4400"
 ]
+
+/* Connecting new colors to DOM */
+mainColorEl.textContent = color[0]
+colorNameEl.textContent = color[1]
+rgbaValueEl.textContent = "RGBA: " + color[2]
+hexValueEl.textContent = "HEX: " + color[3]
 
 /* Local Storage */
 function setColorsLocal() {
@@ -26,5 +32,14 @@ function setColorsLocal() {
     localStorage.setItem("HEX Value", color[3])
 }
 
+/* Generating a new color */
+color[0] = "1,1,1,1"
+color[1] = "Purple"
+color[2] = "1,1,1,1"
+color[3] = "#00000"
+
+
+
+/* Store to Local Storage - Must run after colors have been set */
 setColorsLocal()
 
