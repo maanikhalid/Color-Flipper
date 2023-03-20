@@ -2,8 +2,13 @@
 
 /* Variables */
 :root {
+<<<<<<< Updated upstream
     --main-color: 123,143,151; 
     --main-color-inverse: 123,143,151;
+=======
+    --main-color: 120,140,150; 
+    --main-color-inverse: 120,140,50;
+>>>>>>> Stashed changes
     --btn: 18,92,252;
     --br-radius: 8px;
     --innerPad: 8px;
